@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29215.179
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpeedTest.Lib", "SpeedTest.Lib\SpeedTest.Lib.csproj", "{2D0335D0-81E8-4148-A58A-FCFB75781E42}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{5C358C32-E8BC-49D4-ADFC-BDEB2621E088}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D0335D0-81E8-4148-A58A-FCFB75781E42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D0335D0-81E8-4148-A58A-FCFB75781E42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D0335D0-81E8-4148-A58A-FCFB75781E42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D0335D0-81E8-4148-A58A-FCFB75781E42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C358C32-E8BC-49D4-ADFC-BDEB2621E088}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C358C32-E8BC-49D4-ADFC-BDEB2621E088}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C358C32-E8BC-49D4-ADFC-BDEB2621E088}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C358C32-E8BC-49D4-ADFC-BDEB2621E088}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {19AA3C72-719F-4830-99D7-30EEBD18093D}
+	EndGlobalSection
+EndGlobal
