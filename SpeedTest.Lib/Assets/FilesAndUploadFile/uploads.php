@@ -11,7 +11,6 @@
     $dir = 'uploads/';
 
     move_uploaded_file($tmp_name, $dir . $name);
-
     }
     else{
         die("Não foi possível executar o upload");
