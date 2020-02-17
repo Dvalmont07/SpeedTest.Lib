@@ -12,8 +12,8 @@ namespace ConsoleApp1
                 throw new ArgumentNullException(nameof(args));
             }
 
-            var downloadPath = "https://eslimpezaespecializada.com.br/testes/downloads/";
-            var uploadPath = "https://eslimpezaespecializada.com.br/testes/uploads.php";
+            var downloadPath = "https://exemple.com.br/download_directory/";
+            var uploadPath = "https://exemple.com.br/uploads.php/";
 
             try
             {
