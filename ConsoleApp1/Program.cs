@@ -15,6 +15,7 @@ namespace ConsoleApp1
             var downloadPath = "https://exemple.com.br/download_directory/";
             var uploadPath = "https://exemple.com.br/uploads.php/";
 
+
             try
             {
                 //# Passing the path with the directory where we'll download from
