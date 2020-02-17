@@ -36,7 +36,7 @@ namespace SpeedTest.Lib
         /// <returns></returns>
         public abstract List<FileToProcess> PrepareFiles();
         /// <summary>
-        /// Loops a list of files and delegates the execution to the concrete class
+        /// Loops a list of files and delegates the execution to the specialist class
         /// </summary>
         public void RunTest()
         {
@@ -80,18 +80,20 @@ namespace SpeedTest.Lib
         public string GetSpeedResult()
         {
             RunTest();
-            var valorReal = (totalSpeedList.Average() / 10240);
-            return string.Format("{0:0.00}", valorReal) + " Mbps";
+            decimal realValue = (totalSpeedList.Average() / 10240);
+            return string.Format("{0:0.00}", realValue) + " Mbps";
         }
         /// <summary>
         /// Return the Ping of the process
         /// </summary>
         /// <returns></returns>
-        public string GetPing()
+        public long GetPing()
         {
             using (Ping ping = new Ping())
             {
-                return ping.Send(GetBaseRemoteUri()).RoundtripTime.ToString();
+                long roundTrip = ping.Send(GetBaseRemoteUri()).RoundtripTime / 100;
+
+                return roundTrip;
             }
         }
     }

@@ -12,16 +12,19 @@ namespace ConsoleApp1
                 throw new ArgumentNullException(nameof(args));
             }
 
+            var downloadPath = "https://eslimpezaespecializada.com.br/testes/downloads/";
+            var uploadPath = "https://eslimpezaespecializada.com.br/testes/uploads.php";
+
             try
             {
                 //# Passing the path with the directory where we'll download from
-                DownloadSpeedTest downloadSpeedTest = new DownloadSpeedTest("https://exemple.com.br/download_directory/");
+                DownloadSpeedTest downloadSpeedTest = new DownloadSpeedTest(downloadPath);
                 //# Passing the path with the file where we'll upload to
-                UploadSpeedTest uploadSpeedTest = new UploadSpeedTest("https://exemple.com.br/uploads.php/");
+                UploadSpeedTest uploadSpeedTest = new UploadSpeedTest(uploadPath);
 
                 Console.WriteLine($"Start{Environment.NewLine}");
                 Console.WriteLine("Calculating download speed...");
-                Console.WriteLine($"Ping: {downloadSpeedTest.GetPing()} ms");
+                Console.WriteLine($"Ping: {downloadSpeedTest.GetPing().ToString()} ms");
                 Console.WriteLine(downloadSpeedTest.GetSpeedResult());
                 Console.WriteLine("-----");
 

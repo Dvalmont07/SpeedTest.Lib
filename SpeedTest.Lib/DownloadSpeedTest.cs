@@ -10,7 +10,7 @@ namespace SpeedTest.Lib
 {
     public class DownloadSpeedTest : SpeedTestAbstract
     {
-       
+
 
         /// <summary>
         /// Receaves the file path to be downloaded. Ex https://exemple.com.br/download_directory/
