@@ -1,4 +1,5 @@
-{
-  "FileToProcessDownloadUri": "https://eslimpezaespecializada.com.br/testes/downloads/",
-  "FileToProcessUploadUri": "https://eslimpezaespecializada.com.br/testes/uploads.php"
+﻿{
+  "FileToProcessDownloadUri": "https://exemple.com.br/download_directory/",
+  "FileToProcessUploadUri": "https://exemple.com.br/uploads.php/"
+
 }
