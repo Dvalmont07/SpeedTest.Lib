@@ -10,9 +10,8 @@ namespace SpeedTest.Lib
 {
     public abstract class SpeedTestAbstract
     {
-
         protected string fileUri;
-        protected string baseLocalUri = @"C:\\Windows\\Temp";
+        protected string baseLocalUri = @"C:\\Windows\\Temp\";
         public List<decimal> totalSpeedList;
 
         /// <summary>
