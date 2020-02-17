@@ -1,4 +1,5 @@
 {
   "FileToProcessDownloadUri": "https://eslimpezaespecializada.com.br/testes/downloads/",
-  "FileToProcessUploadUri": "https://eslimpezaespecializada.com.br/testes/uploads.php"
+  "FileToProcessUploadUri": "https://eslimpezaespecializada.com.br/testes/uploads.php",
+  "FileToProcessUploadUri2": "https://eslimpezaespecializada.com.br/testes/uploads.php"
 }
