@@ -1,5 +1,8 @@
-﻿using SpeedTest.Lib;
+﻿using Newtonsoft.Json;
+using SpeedTest.Lib;
 using System;
+using System.Collections.Generic;
+using System.IO;
 
 namespace ConsoleApp1
 {
@@ -11,9 +14,22 @@ namespace ConsoleApp1
             {
                 throw new ArgumentNullException(nameof(args));
             }
+var path = "Config.json";
+            var GetDirectory = Path.GetFullPath(path);
 
-            var downloadPath = "https://exemple.com.br/download_directory/";
-            var uploadPath = "https://exemple.com.br/uploads.php/";
+            
+
+            StreamReader r = new StreamReader(path);
+
+            
+
+            var json = r.ReadToEnd();
+            var dict = JsonConvert.DeserializeObject<Dictionary<string, string>>(json);
+          
+            r.Close();
+
+            var downloadPath = dict["FileToProcessDownloadUri"];
+            var uploadPath = dict["FileToProcessUploadUri"];
 
 
             try
